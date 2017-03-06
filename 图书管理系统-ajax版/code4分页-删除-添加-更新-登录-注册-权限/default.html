@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>欢迎登录图书管理系统后台</title>
+<link rel="stylesheet" href="css/public.css">
+<link rel="stylesheet" href="css/login.css">
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" src="js/addevent.js"></script>
+<script>
+addEvent(window,"load",function(){
+  var adminName=document.getElementById("adminName");
+  var adminPwd=document.getElementById("adminPwd");
+  var btn=document.getElementById("btn");
+  var tips=document.getElementById("tips");
+  addEvent(btn,"click",function(){
+	   var data="adminName="+adminName.value+"&adminPwd="+adminPwd.value;
+	   ajax("POST","checkuser.php",function(data){
+		   if(data==1){
+			   location.href="index.php";
+			   }else{
+				   tips.style.display="block";
+				   tips.innerHTML="用户名或密码错误";
+			    }
+	   },function(){},data);
+  });
+  //鼠标点入用户名或密码框tips提示消失
+  addEvent(adminName,"focus",function(){
+	 tips.innerHTML=""; 
+  });
+  addEvent(adminPwd,"focus",function(){
+	 tips.innerHTML=""; 
+  });
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+  <h3>图书管理系统后台登录</h3>
+  <span id="tips"></span>
+     用户名:<input type="text" id="adminName" ><br>
+     密&nbsp;&nbsp;&nbsp;&nbsp;码:<input type="password" id="adminPwd"><br>
+     <input type="button" id="btn" value="登录" class="submit"><a href="reg.php">注册</a>
+</div>
+</body>
+</html>

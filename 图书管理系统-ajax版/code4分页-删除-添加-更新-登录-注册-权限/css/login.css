@@ -1,0 +1,35 @@
+@charset "utf-8";
+div.container{
+	margin-top:200px;
+	width:300px;
+	text-align:center;
+}
+h3{
+	text-align:center;
+	padding-bottom:30px;
+}
+input{
+	width:150px;
+	height:20px;
+	margin-bottom:3px;
+}
+select{
+	width:125px;
+	height:20px;
+	margin-bottom:3px;
+}
+input.submit{
+	width:40px;
+	background-color:transparent;
+	border:none;
+}
+div.container a{
+	text-decoration:none;
+	color:#999;
+}
+span#tips{
+	display:none;
+	height:18px;
+	color:#f00;
+
+}

@@ -1,0 +1,60 @@
+default.html 系统默认页面    高
+checkuser.html 登录页面接口  php
+
+reg.php 注册页面    高 
+
+regchuli.php 注册页面后台 php
+
+检测用户名是否被占用--自己写 php
+
+index.php  管理系统首页  书籍信息展示  和
+
+books.php   index.php  页面初始化接口  php
+
+upload.php  书籍添加页面  gao
+
+uploadchuli.php 书籍添加逻辑处理页面  php
+
+update.php 更新书籍信息页面 gao
+
+updatedata.php 更新书籍信息初始化接口 php
+
+updatechuli.php 更新书籍逻辑处理页面 php
+
+delbook.php 删除书籍接口php
+
+conn.php 数据库连接公用页面 php
+
+
+addevent.js js事件绑定 guo
+
+ajax.js   js ajax封装 guo
+--------------------------------------------------------
+文件夹说明:
+upload 图片上传文件夹
+js  js文件夹
+css css模块化文件夹
+-----------------------------------------------
+
+权限:
+   1.超级管理员  --admin  添加删除更新查找
+   2.普通管理员  --vip    查看查找
+
+模块:
+   1.会员模块
+      --登录模块
+      --注册模块
+      --预审模块（没写） 一个用户注册，注册完得通过管理员的验证，才可以登录
+    2.查看 load
+      删除
+      添加
+      更新才
+      模糊查询
+
+
+
+
+
+补充 高css     丰哥 密码强度验证   
+php 预审模块     米萧接口文档 数据库
+

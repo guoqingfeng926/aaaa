@@ -1,0 +1,32 @@
+@charset "utf-8";
+h3{
+	font:30px/1.5em  黑体;
+	color:#333;
+}
+table,td{
+	border-collapse:collapse;
+}
+td{
+	border-bottom:1px solid #666;
+}
+a{
+	text-decoration:none;
+	color:#999;
+}
+
+.bookOri{
+	text-decoration:line-through;
+}
+input{
+	background-color:transparent;
+	border:none;
+	color:#666;
+}
+#datalist img{
+	width:100px;
+}
+ span{
+	display:inline-block;
+	cursor:pointer;
+	margin-right:5px;
+}
